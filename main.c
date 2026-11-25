@@ -4,8 +4,6 @@
 // macro substition
 #define num_of_arg 9
 
-
-
 int main(int argc, char *argv[])
 {
 // module: legal input
@@ -17,7 +15,7 @@ int main(int argc, char *argv[])
         return INPUT_WRONG;
     }
 
-    // 0: events, 1: actions, 2: base, 3, output. these are all filepaths to be reused
+    // 0: base, 1: events, 2: actions, 3, output
     int argv_index[4];
     if (input(argv, argv_index) != PASSED)
     {

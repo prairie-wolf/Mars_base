@@ -20,8 +20,7 @@ typedef struct {
     // the above have to appear in the output
 } BaseState;
 
-typedef struct
-{
+typedef struct {
     // other env status
     bool commu_lose;
     bool oxy_leak;
@@ -31,6 +30,7 @@ typedef struct
 
 
 typedef enum {
+    INVALID = -1,
     EXCEPTION,
     PASSED,
     INPUT_WRONG,
@@ -41,7 +41,7 @@ typedef enum {
 
 } RaiseError;
 
-int input(char *argc[], int arg[]);
+int input(char *argv[], int index[]);
 int init(BaseState *base, char *base_path);
 int events(BaseState *base, char *events_path, env environment);
 int actions(BaseState *base, char *actions_path, env environment);
