@@ -3,6 +3,7 @@
 
 #include <stdbool.h>
 
+// remember to change the variable name to lowercase
 typedef struct {
     int TIME;    // 1 to 72
     int POWER;   // reset if under 0
