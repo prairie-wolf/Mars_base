@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
     // initialization
     BaseState base = {0};
     env environment = {false};
-    if (init(&base, argv[argv_index[2]]) != PASSED) {return INIT_WRONG;}
+    if (init(&base, argv[argv_index[0]]) != PASSED) {return INIT_WRONG;}
 
     //by now, the program should have a valid inital base state
     
